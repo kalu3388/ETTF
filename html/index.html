@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ethiopian Table Tennis Federation</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <style>
+      html { scroll-behavior: smooth; }
+      body { font-family: 'Poppins', sans-serif; }
+      /* Re‑usable pill button for ranking tabs */
+      .ranking‑tab{@apply px-4 py-2 rounded-full border border-green-600 text-green-600 font-medium transition whitespace-nowrap;}
+      .ranking‑tab.active{ @apply bg-green-600 text-white; }
+    </style>
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+    <!-- ============ NAVIGATION ============ -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+      <div class="container mx-auto flex items-center justify-between py-4 px-6">
+        <div class="flex items-center space-x-3">
+          <img src="images.jpg" alt="ETTF Logo" class="h-12 w-12 object-contain" />
+          <h1 class="text-2xl font-bold text-green-600">ኢትዮጵያ ጠረጴዛ ቴኒስ ፌዴሬሽን</h1>
+        </div>
+        <nav class="hidden md:flex space-x-6 text-sm font-medium">
+          <a href="#home" class="hover:text-green-600">Home</a>
+          <a href="#about" class="hover:text-green-600">About</a>
+          <a href="#news" class="hover:text-green-600">News</a>
+          <a href="#events" class="hover:text-green-600">Events</a>
+          <a href="#tournaments" class="hover:text-green-600">Tournaments</a>
+          <a href="#rankings" class="hover:text-green-600">Rankings</a>
+          <a href="#gallery" class="hover:text-green-600">Gallery</a>
+          <a href="#contact" class="hover:text-green-600">Contact</a>
+        </nav>
+        <button id="mobile-menu-btn" class="md:hidden focus:outline-none">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+      <!-- Mobile links -->
+      <div id="mobile-menu" class="md:hidden hidden flex-col space-y-4 px-6 pb-4 bg-white shadow text-sm font-medium">
+        <a href="#home" class="hover:text-green-600">Home</a>
+        <a href="#about" class="hover:text-green-600">About</a>
+        <a href="#news" class="hover:text-green-600">News</a>
+        <a href="#events" class="hover:text-green-600">Events</a>
+        <a href="#tournaments" class="hover:text-green-600">Tournaments</a>
+        <a href="#rankings" class="hover:text-green-600">Rankings</a>
+        <a href="#gallery" class="hover:text-green-600">Gallery</a>
+        <a href="#contact" class="hover:text-green-600">Contact</a>
+      </div>
+    </header>
+
+    <!-- ============ HERO ============ -->
+    <section id="home" class="relative bg-cover bg-center h-[60vh] flex items-center justify-center" style="background-image:url(background.jpg);">
+      <div class="absolute inset-0 bg-black/60"></div>
+      <div class="relative z-10 text-center text-white px-4">
+        <h2 class="text-4xl md:text-6xl font-extrabold mb-4">Table Tennis Excellence in Ethiopia</h2>
+        <p class="text-xl md:text-2xl mb-6">From grassroots to the international stage</p>
+        <a href="#events" class="inline-block bg-green-600 hover:bg-green-700 px-8 py-3 rounded-full text-lg font-semibold">Upcoming Events</a>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="py-16 bg-gray-100">
+      <div class="container mx-auto px-6">
+        <h3 class="text-3xl font-bold text-center mb-8">About Us</h3>
+        <div class="max-w-4xl mx-auto text-center text-lg leading-relaxed">
+          <p>The Ethiopian Table Tennis Federation (ETTF) is the official governing body for table tennis in Ethiopia. Our mission is to develop, promote, and regulate the sport across the nation, nurturing talents and fostering sportsmanship.</p>
+          <p class="mt-4">Competition is organised across <strong>two divisions</strong> (Premier & Division 1) to ensure balanced growth for clubs and athletes country‑wide.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ NEWS (unchanged) ============ -->
+    <section id="news" class="py-16">
+      <div class="container mx-auto px-6">
+        <h3 class="text-3xl font-bold text-center mb-8">Latest News</h3>
+        <div class="grid gap-8 md:grid-cols-3">
+          <!-- Example cards -->
+          <article class="bg-white rounded-2xl shadow p-6 hover:shadow-lg transition">
+            <img src="images.jpg" alt="Championship" class="rounded-xl mb-4 h-40 w-full object-cover" />
+            <h4 class="text-xl font-semibold mb-2">National Championship Kicks Off</h4>
+            <p class="text-sm text-gray-600 mb-4">20‑25 June 2025 · Addis Ababa</p>
+            <p class="mb-4">The 2025 championship features Ethiopia’s top talents battling for glory.</p>
+            <a href="#" class="text-green-600 hover:underline font-semibold">Read more →</a>
+          </article>
+          <article class="bg-white rounded-2xl shadow p-6 hover:shadow-lg transition">
+            <img src="images (1).jpg" alt="Cup Qualifiers" class="rounded-xl mb-4 h-40 w-full object-cover" />
+            <h4 class="text-xl font-semibold mb-2">Ethiopia Qualifies for African Cup</h4>
+            <p class="text-sm text-gray-600 mb-4">30 May 2025 · Kigali</p>
+            <p class="mb-4">Our squad secures a spot at the African Table Tennis Cup after stellar qualifiers.</p>
+            <a href="#" class="text-green-600 hover:underline font-semibold">Read more →</a>
+          </article>
+          <article class="bg-white rounded-2xl shadow p-6 hover:shadow-lg transition">
+            <img src="download.jpg" alt="Grassroots" class="rounded-xl mb-4 h-40 w-full object-cover" />
+            <h4 class="text-xl font-semibold mb-2">Grassroots Program Launches Hawassa</h4>
+            <p class="text-sm text-gray-600 mb-4">15 Apr 2025 · Hawassa</p>
+            <p class="mb-4">A new youth initiative introduces table tennis to schools and community centres.</p>
+            <a href="#" class="text-green-600 hover:underline font-semibold">Read more →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EVENTS (unchanged) ============ -->
+    <section id="events" class="py-16 bg-gray-100">
+      <div class="container mx-auto px-6">
+        <h3 class="text-3xl font-bold text-center mb-8">Upcoming Events</h3>
+        <div class="overflow-x-auto">
+          <table class="min-w-full bg-white rounded-2xl shadow text-sm">
+            <thead class="bg-green-600 text-white">
+              <tr><th class="py-3 px-4 text-left">Date</th><th class="py-3 px-4 text-left">Event</th><th class="py-3 px-4 text-left">Category</th><th class="py-3 px-4 text-left">Location</th><th class="py-3 px-4 text-left">Info</th></tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+              <tr><td class="py-3 px-4">20‑25 Jun 2025</td><td class="py-3 px-4">National Championship</td><td class="py-3 px-4">Singles & Doubles</td><td class="py-3 px-4">Addis Ababa</td><td class="py-3 px-4"><a href="#" class="text-green-600 hover:underline">Register</a></td></tr>
+              <tr><td class="py-3 px-4">18‑19 Jul 2025</td><td class="py-3 px-4">Youth Talent Camp</td><td class="py-3 px-4">U‑18</td><td class="py-3 px-4">Hawassa</td><td class="py-3 px-4"><a href="#" class="text-green-600 hover:underline">Learn more</a></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TOURNAMENT FORMATS (unchanged) ============ -->
+    <section id="tournaments" class="py-16">
+      <div class="container mx-auto px-6">
+        <h3 class="text-3xl font-bold text-center mb-8">Tournament Formats</h3>
+        <p class="max-w-3xl mx-auto text-center mb-12 text-lg">National titles are contested in the following divisions & formats:</p>
+        <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <div class="bg-white rounded-2xl shadow p-6">
+            <h4 class="text-xl font-bold mb-2">Men’s Doubles</h4><p>Two‑player men’s pairs; best of five sets.</p></div>
+          <div class="bg-white rounded-2xl shadow p-6">
+            <h4 class="text-xl font-bold mb-2">Women’s Doubles</h4><p>Elite women pairings face off for national honours.</p></div>
+          <div class="bg-white rounded-2xl shadow p-6">
+            <h4 class="text-xl font-bold mb-2">Mixed Doubles</h4><p>One man + one woman teaming up—perfect balance of power and precision.</p></div>
+          <div class="bg-white rounded-2xl shadow p-6">
+            <h4 class="text-xl font-bold mb-2">Men’s Team</h4><p>Club squads of four compete in singles & doubles rubbers.</p></div>
+          <div class="bg-white rounded-2xl shadow p-6">
+            <h4 class="text-xl font-bold mb-2">Women’s Team</h4><p>Women’s club line‑ups battle for supremacy.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ RANKINGS ============ -->
+    <section id="rankings" class="py-16 bg-gray-100">
+      <div class="container mx-auto px-6">
+        <h3 class="text-3xl font-bold text-center mb-8">National Rankings</h3>
+
+        <!-- Tab Bar (Singles / Doubles / Clubs) -->
+        <div class="flex flex-wrap justify-center gap-2 mb-10">
+          <button class="ranking‑tab active" data-target="singles-pane">Singles</button>
+          <button class="ranking‑tab" data-target="doubles-pane">Doubles</button>
+          <button class="ranking‑tab" data-target="clubs-pane">Club Teams</button>
+        </div>
+
+        <!-- ---------- SINGLES (Men & Women side‑by‑side) ---------- -->
+        <div id="singles-pane" class="ranking-pane">
+          <div class="grid gap-8 md:grid-cols-2">
+            <!-- Men Singles -->
+            <div class="overflow-x-auto">
+              <h4 class="text-xl font-semibold mb-3 text-center">Men Singles</h4>
+              <table class="min-w-full bg-white rounded-2xl shadow text-sm">
+                <thead class="bg-green-600 text-white"><tr><th class="py-2 px-3 text-left">#</th><th class="py-2 px-3 text-left">Player</th><th class="py-2 px-3 text-left">Points</th></tr></thead>
+                <tbody class="divide-y divide-gray-200">
+                  <tr><td class="py-2 px-3">1</td><td class="py-2 px-3">Derara Mekonen</td><td class="py-2 px-3">—</td></tr>
+                  <tr><td class="py-2 px-3">2</td><td class="py-2 px-3">Amanuyel Amha</td><td class="py-2 px-3">—</td></tr>
+                  <tr><td class="py-2 px-3">3</td><td class="py-2 px-3">Eyob Sisay</td><td class="py-2 px-3">—</td></tr>
+                  <tr><td class="py-2 px-3">4</td><td class="py-2 px-3">Melaku Belay</td><td class="py-2 px-3">—</td></tr>
+                  <tr><td class="py-2 px-3">5</td><td class="py-2 px-3">Kalab Maregn</td><td class="py-2 px-3">—</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- Women Singles -->
+            <div class="overflow-x-auto">
+              <h4 class="text-xl font-semibold mb-3 text-center">Women Singles</h4>
+              <table class="min-w-full bg-white rounded-2xl shadow text-sm">
+                <thead class="bg-green-600 text-white"><tr><th class="py-2 px-3 text-left">#</th><th class="py-2 px-3 text-left">Player</th><th class="py-2 px-3 text-left">Points</th></tr></thead>
+                <tbody class="divide-y divide-gray-200">
+                  <tr><td class="py-2 px-3">1</td><td class="py-2 px-3">Yordanos Nigida</td><td class="py-2 px-3">—</td></tr>
+                  <tr><td class="py-2 px-3">2</td><td class="py-2 px-3">Fana Rezene</td><td class="py-2 px-3">—</td></tr>
+                  <tr><td class="py-2 px-3">3</td><td class="py-2 px-3">Marta Meshesha</td><td class="py-2 px-3">—</td></tr>
+                  <tr><td class="py-2 px-3">4</td><td class="py-2 px-3">faven tamiru</td><td class="py-2 px-3">—</td></tr>
+                  <tr><td class="py-2 px-3">4</td><td class="py-2 px-3">fitawit giday</td><td class="py-2 px-3">—</td></tr>
+<!-- men club rank  -->
+ 
+              <h5 class="text-xl font-semibold mb-3 text-center"></h4>
+              <table class="min-w-full bg-white rounded-2xl shadow text-sm">
+                <thead class="bg-green-600 text-white"><tr><th class="py-2 px-3 text-left">#</th><th class="py-2 px-3 text-left">MEN CLUB RANK</th><th class="py-2 px-3 text-left">Points</th></tr></thead>
+                <tbody class="divide-y divide-gray-200">
+                  <tr><td class="py-2 px-3">1</td><td class="py-2 px-3">CBE</td><td class="py-2 px-3">—</td></tr>
+                  <tr><td class="py-2 px-3">2</td><td class="py-2 px-3">ETHIO ELECTRIC</td><td class="py-2 px-3">—</td></tr>
+                  <tr><td class="py-2 px-3">3</td><td class="py-2 px-3">OROMIYA POLICE</td><td class="py-2 px-3">—</td></tr>
+                  <tr><td class="py-2 px-3">4</td><td class="py-2 px-3">YMCA</td><td class="py-2 px-3">—</td></tr>
+                  <tr><td class="py-2 px-3">5</td><td class="py-2 px-3">PING PONG ETHIOPIA</td><td class="py-2 px-3">—</td></tr>
+                </tbody>
+              </table>
+            </div>
+ <!-- men club rank  -->
+  <h5 class="text-xl font-semibold mb-3 text-center"></h4>
+              <table class="min-w-full bg-white rounded-2xl shadow text-sm">
+                <thead class="bg-green-600 text-white"><tr><th class="py-2 px-3 text-left">#</th><th class="py-2 px-3 text-left">WOMEN CLUB RANK</th><th class="py-2 px-3 text-left">Points</th></tr></thead>
+                <tbody class="divide-y divide-gray-200">
+                  <tr><td class="py-2 px-3">1</td><td class="py-2 px-3">ETHIO ELECTRIC</td><td class="py-2 px-3">—</td></tr>
+                  <tr><td class="py-2 px-3">2</td><td class="py-2 px-3">CBE</td><td class="py-2 px-3">—</td></tr>
+                  <tr><td class="py-2 px-3">3</td><td class="py-2 px-3">OROMIYA POLICE</td><td class="py-2 px-3">—</td></tr>
+                  <tr><td class="py-2 px-3">4</td><td class="py-2 px-3">YMCA</td><td class="py-2 px-3">—</td></tr>
+                  <tr><td class="py-2 px-3">5</td><td class="py-2 px-3">PING PONG ETHIOPIA</td><td class="py-2 px-3">—</td></tr>
+                </tbody>
+              </table>
+            </div>
+<!-- ============ GALLERY ============ -->
+<section id="gallery" class="py-16">
+  <div class="container mx-auto px-6">
+    <h3 class="text-3xl font-bold text-center mb-8">Gallery</h3>
+    <div class="grid gap-6 md:grid-cols-3">
+      <img src="eth men team.jpg" alt="Gallery 1" class="rounded-xl shadow" />
+      <img src="eth women team.jpg" alt="Gallery 2" class="rounded-xl shadow" />
+      <img src="fadatration.jpg" alt="Gallery 3" class="rounded-xl shadow" />
+      <img src="tarik.jpg" alt="Gallery 4" class="rounded-xl shadow" />
+      <img src="tarik africa.jpg" alt="Gallery 5" class="rounded-xl shadow" />
+      <img src="elpa.jpg" alt="Gallery 5" class="rounded-xl shadow" />
+      <img src="cbe.jpg" alt="Gallery 6" class="rounded-xl shadow" />
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT US ============ -->
+<section id="contact" class="py-16 bg-gray-100">
+  <div class="container mx-auto px-6">
+    <h3 class="text-3xl font-bold text-center mb-8">Contact Us</h3>
+    <form class="max-w-xl mx-auto space-y-4 bg-white p-6 rounded-2xl shadow">
+      <input type="text" placeholder="Your Name" class="w-full px-4 py-3 border rounded-lg" required />
+      <input type="email" placeholder="Your Email" class="w-full px-4 py-3 border rounded-lg" required />
+      <textarea rows="5" placeholder="Your Message" class="w-full px-4 py-3 border rounded-lg" required></textarea>
+      <button type="submit" class="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-3 rounded-lg">Send Message</button>
+    </form>
+  </div>
+</section>
